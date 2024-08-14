@@ -264,3 +264,126 @@ footer {
 footer p {
     margin: 10px 0 0;
 }
+
+
+/* Base styles for desktop (default) */
+body {
+    font-family: sans-serif;
+    background-color: #121212;
+    color: #B62625;
+    margin: 0;
+    padding: 0;
+}
+
+/* Styles for screens smaller than 768px (tablets and mobile phones) */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Stack the header items vertically */
+        padding: 10px 5px; /* Adjust padding for smaller screens */
+    }
+
+    header .logo img {
+        height: 80px; /* Adjust logo height for smaller screens */
+    }
+
+    header .logo h1 {
+        font-size: 50px; /* Adjust font size for the logo */
+    }
+
+    header nav {
+        margin-top: 10px; /* Space between logo and navigation */
+    }
+
+    header nav a {
+        font-size: 16px; /* Adjust font size for navigation links */
+        margin: 5px; /* Adjust margin for spacing */
+    }
+
+    .cover {
+        flex-direction: column; /* Stack the cover section items vertically */
+        text-align: center; /* Center-align text */
+    }
+
+    .cover-image {
+        width: 100%; /* Full width for cover image */
+        margin-bottom: 10px; /* Space between image and text */
+    }
+
+    .cover-text {
+        padding-left: 0; /* Remove left padding */
+    }
+
+    .latest-videos, .reels {
+        padding: 10px; /* Adjust padding */
+    }
+
+    .video-container, .reel-container {
+        flex-direction: column; /* Stack items vertically */
+        gap: 10px; /* Adjust space between items */
+    }
+
+    .video-item, .reel-item {
+        max-width: 100%; /* Full width for each video item */
+    }
+
+    .video-item iframe, .reel-item iframe {
+        height: 150px; /* Adjust height for videos */
+    }
+
+    footer {
+        padding: 10px;
+        text-align: center;
+    }
+
+    footer a {
+        font-size: 20px; /* Adjust size for footer links */
+        margin: 0 5px;
+    }
+
+    .footer-icon {
+        font-size: 20px; /* Adjust size for footer icons */
+    }
+
+    .intro-title {
+        font-size: 36px; /* Adjust font size */
+    }
+
+    .intro-text, .intro-list {
+        font-size: 18px; /* Adjust font size */
+    }
+}
+
+/* Styles for screens smaller than 480px (mobile phones) */
+@media (max-width: 480px) {
+    header .logo h1 {
+        font-size: 40px; /* Further adjust font size for smaller screens */
+    }
+
+    header nav a {
+        font-size: 14px; /* Further adjust font size for navigation links */
+    }
+
+    .cover-text h2 {
+        font-size: 24px; /* Adjust font size for cover text */
+    }
+
+    .cover-text p {
+        font-size: 16px; /* Adjust font size for cover text */
+    }
+
+    .latest-videos h2, .reels h2 {
+        font-size: 30px; /* Adjust font size for section headings */
+    }
+
+    .video-item iframe, .reel-item iframe {
+        height: 120px; /* Further adjust height for videos */
+    }
+
+    .intro-title {
+        font-size: 28px; /* Further adjust font size */
+    }
+
+    .intro-text, .intro-list {
+        font-size: 16px; /* Further adjust font size */
+    }
+}
